@@ -78,7 +78,7 @@ var UserSchema = new Schema({
 });
 
 mongoose.model('User', UserSchema);
-mongoose.connect(process.env.MONGODB_URI, function(err) {
+mongoose.connect('mongodb://heroku_wlxvt4hl:gacrf4p9rstjpv02o036aedd6u@ds021999.mlab.com:21999/heroku_wlxvt4hl', function(err) {
   if (err) {
     console.log('Could not connect to database: ' + err);
     process.exit(1);
