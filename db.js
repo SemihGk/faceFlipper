@@ -78,7 +78,7 @@ var UserSchema = new Schema({
 });
 
 mongoose.model('User', UserSchema);
-mongoose.connect(config.database.host, config.database.name, function(err) {
+mongoose.connect(process.env.MONGODB_URI, function(err) {
   if (err) {
     console.log('Could not connect to database: ' + err);
     process.exit(1);
