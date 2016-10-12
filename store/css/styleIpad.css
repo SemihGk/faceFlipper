@@ -1,0 +1,416 @@
+/* Eric Meyer's Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Common */
+
+strong, .strong {
+    font-weight: bold;
+}
+.center {
+    text-align: center;
+}
+
+ /*-----------------------------------fonts------*/
+@font-face {
+    font-family: TradeGothic;
+    src: url(../fonts/TradeGothic/TradeGothicLTStd.otf);
+	font-family: TradeGothicBold;
+    src: url(../fonts/TradeGothic/TradeGothicLTStd-Bold.otf);
+}
+
+@font-face {
+    font-family: Compacta;
+    src: url(../fonts/Compacta/compacta-bt.ttf);
+}
+
+
+
+/* Structure */
+
+html, #wrap {
+    background: #014d32;
+    font: 16px normal Helvetica, sans-serif;
+    -webkit-user-select: none;
+}
+#main {
+    display:block;
+	width:1536px;
+	height:2048px;
+    position: relative;
+    vertical-align: top;
+	overflow:hidden;
+}
+
+.dev-only{
+	display:none;
+	width: 100px;
+	height:100px;
+	float:left;
+	font-size:30px;
+	margin-top:30px;	
+}
+.dev-only button{
+	/*display:inline;*/
+	display:none;
+	font-size:30px;	
+}
+
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+  line-height:inherit;
+}
+.notifications .notifications-container{
+    margin-top: 10px;
+
+}
+.notifications .error{
+	    font-size: 33px;	
+}
+.ng-toast{
+	
+}
+
+.ng-toast__list{
+	left:0;
+	background:#F30;
+	color:#FFF;
+	float:left;	
+}
+.ng-toast.ng-toast--right .ng-toast__list{
+	left:0;	
+	margin-left: 20px;
+}
+.ng-toast.ng-toast--right .ng-toast__message{
+	text-align:center;	
+}
+.ng-toast__list li{
+	font-size:30px;
+	padding:10px;	
+}
+ /*-----------------------------------this pulls up the image because there is a 20px stripe on ipads------*/
+.content{
+	margin-top:-20px;	
+}
+ /*-----------------------------------first page------*/
+.ipad-play-now{
+	background:url(../images/play_now_1536x2048.jpg) no-repeat top left;
+}
+.ipad-play-now .content{
+	padding-top:1561px;
+	padding-left:422px;
+	
+}
+.ipad-play-now button{
+	display:block;
+	width:719px;
+	height:272px;
+	text-indent:-999999999px;
+	-webkit-appearance: none;
+	opacity:0;
+	
+	
+}
+ /*-----------------------------------second page--------*/
+.ipad-sign-up .sign-up-header{
+	display:block;
+	width:1536px;
+	height:376px;
+	background:url(../images/form_header_1536x376.jpg) no-repeat top left;
+	background-size: 1536px 376px;
+}
+
+.ipad-sign-up .sign-up-form{
+	display:block;
+	width:1536px;
+	height:1396px;
+	background:#FFF;
+}
+.ipad-sign-up .sign-up-form form{
+	font-family:TradeGothicBold;
+	/*font-weight:bold;*/
+	display:inline-block;
+	width:1126px;
+	margin:55px;
+	background:#f2f6f5;
+	padding:55px 150px 15px 150px;
+	
+}
+.ipad-sign-up .sign-up-form form h2{
+	font-weight:bold;
+	font-size:30px;
+	display:inline-block;
+	-webkit-transform:scale(1.2,1.5);
+	color:#015135;
+	margin-bottom:50px;
+	margin-left:90px;
+}
+.ipad-sign-up .sign-up-form .form_row{
+	display:block;
+	width:100%;
+	height:40px;
+	font-size:33px;
+	color:#015135;
+	margin-bottom:75px;
+	
+}
+.ipad-sign-up .sign-up-form .form_row_checkbox{
+	
+	margin-bottom:30px;	
+}
+.ipad-sign-up .sign-up-form .form_row_checkbox.last_checkbox{
+	
+	margin-bottom:10px;	
+}
+.ipad-sign-up .sign-up-form .form_label{
+	display:block;
+	height:65px;
+	float:right;
+	font-weight:bold;
+	margin-right:40px;
+	vertical-align:bottom;
+	line-height:75px;
+}
+.ipad-sign-up .sign-up-form .checkbox_label{
+	font-size:21px;
+	display:block;
+	height:65px;
+	float:left;
+	font-weight:bold;
+	vertical-align:bottom;
+	line-height:75px;
+	-webkit-transform:scale(1,1.5);
+}
+.ipad-sign-up .sign-up-form .form_row input{
+	display:block;
+	width:628px;
+	height:50px;
+	border:solid thin #999;
+	float:right;
+	font-size:37px;
+	line-height:37px;
+	margin-right:180px;
+	vertical-align:bottom;
+}
+.ipad-sign-up .sign-up-form .form_row_checkbox input{
+	display:block;
+	width:66px;
+	/*height:65px;*/
+	border:solid thin #999;
+	float:left;
+	font-size:33px;
+	line-height:30px;
+	margin-left:60px;
+	margin-right:40px;
+	vertical-align:bottom;
+	
+}
+
+input[type=date]{
+	-webkit-appearance: none;
+	
+}
+input[type=text]{
+	display:block;
+	vertical-align:bottom;
+	height:65px;
+	font-family:TradeGothicBold;
+	border-radius:10px;
+	padding-left:25px;
+	padding-top:15px;
+}
+input[type=date]{
+	display:block;
+	vertical-align:bottom;
+	height:65px;
+	font-family:TradeGothicBold;
+	border-radius:10px;
+	padding-left:25px;
+	padding-top:20px;
+	padding-bottom:5px;
+	
+}
+
+.ipad-sign-up .sign-up-form .form_row_button{
+	display:block;
+	width:	423px;
+	height:140px;
+	margin: 0 auto;
+	
+	background:url(../images/sign_me_up_button_423x140.png) no-repeat top left;
+}
+.ipad-sign-up .sign-up-form .form_row_button input{
+	-webkit-appearance: none;
+	display:block;
+	width:	423px;
+	height:140px;
+	margin: 50px auto 0px auto;
+	text-indent:-9999999px;
+	opacity:0;
+	
+}
+
+.ipad-sign-up .sign-up-footer{
+	display:block;
+	width:1536px;
+	height:276px;
+	background:url(../images/form_footer_1536x276.jpg) no-repeat top left;
+	bakground-size: 1536px 276px;
+}
+
+#notice-of-collection{
+	width:100%;
+	font-size:28px;
+	text-align:center;
+	margin-top:20px;
+	
+}
+#notice-link{
+	color:#CCC;
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+.fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened{
+	left:55px !important;
+	width:1426px !important;
+	padding:0px;
+	background-color:#f2f6f5 !important;
+	
+}
+.fancybox-inner{
+	width:100% !important;	
+	background-color:#f2f6f5 !important;
+}
+#notice-template{
+	padding:20px;
+	background-color:#f2f6f5 !important;
+	font-size:35px !important;	
+	line-height:50px !important;
+	
+}
+ /*-----------------------------------third page--------*/
+.ipad-add-photo {
+	display:block;
+	width:1536px;
+	height:2048px;
+	background:url(../images/take_photo_1536x2048.jpg) no-repeat top left;
+	
+}
+
+.ipad-add-photo .uploader-content{
+	display:block;
+	width:100%;
+	padding-top:1516px;	
+	padding-left:562px;
+}
+.qq-uploader{
+	border:none !important;	
+
+}
+.ipad-add-photo .qq-uploader{
+	display:block;
+	width:420px;	
+	height:410px;
+	/*background-color:#6FF;*/
+
+}
+.qq-upload-list-selector.qq-upload-list{
+	display:none;	
+}
+ /*-----------------------------------win page--------*/
+.ipad-win {
+	display:block;
+	width:1536px;
+	height:2048px;
+	background:url(../images/win_1536x2048.jpg) no-repeat top left;
+	
+}
+ /*-----------------------------------lose page--------*/
+.ipad-lose {
+	display:block;
+	width:1536px;
+	height:2048px;
+	background:url(../images/lose_1536x2048.jpg) no-repeat top left;
+	
+}
+.ipad-win .content, .ipad-lose .content{
+	display:block;
+	/*width:1536px;
+	height:2048px;*/
+	padding-top:1920px;
+	padding-left:0px;
+}
+.ipad-win button, .ipad-lose button{
+	display:block;
+	width:300px;
+	height:100px;
+	/*background:#3F0;*/
+	text-indent:-9999px;	
+	-webkit-appearance: none;
+	opacity:0;
+}
+ /*-----------------------------------good luck page--------*/
+.ipad-good-luck {
+	display:block;
+	width:1536px;
+	height:2048px;
+	background:url(../images/good_luck_1536x2048.jpg) no-repeat top left;
+	
+}
+ /*-----------------------------------spin page--------*/
+.ipad-spin {
+	display:block;
+	width:1536px;
+	height:2048px;
+	background:url(../images/spin_1536x2048.jpg) no-repeat top left;
+	
+}
+.ipad-spin .content{
+	display:block;	
+	/*width:1536px;
+	height:1038px;*/
+	padding-top:1010px;
+	padding-left:420px;
+}
+.ipad-spin form{
+	display:block;	
+	width:100%;
+	height:100%;
+}
+.ipad-spin button{
+	display:block;
+	width:	720px;
+	height:272px;
+	text-indent:-9999999px;
+	-webkit-appearance: none;
+	opacity:0;
+	
+}

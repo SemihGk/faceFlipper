@@ -1,0 +1,35 @@
+{
+  "name": "faceflipper",
+  "version": "0.0.1",
+  "author": "Semih GOKCEOGLU",
+  "engines": {
+    "node": "5.5.0"
+  },
+  "scripts": {
+    "start": "npm install && node server.js"
+  },
+  "license": "BSD-2-Clause",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.0",
+    "crypto": "0.0.3",
+    "express": "latest",
+    "express-validator": "^2.20.8",
+    "fine-uploader-server": "^0.1.0",
+    "gm": "^1.22.0",
+    "lodash": "^4.13.1",
+    "mongoose": "^4.5.3",
+    "multiparty": "^4.1.2",
+    "request": "^2.73.0",
+    "socket.io": "^1.4.8"
+  },
+  "description": "faceflipper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SemihGk/faceFlipper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SemihGk/faceFlipper/issues"
+  }
+}

@@ -1,0 +1,37 @@
+<div id="main" ng-controller="tvController as tv" ng-init="tv.init()">
+  <div class="content">
+    <!-- <p>Me got forms too:</p> -->
+    <div class="box-white" ng-show="tv.screen">
+      <!-- <div ng-repeat="user in users">
+      <span ng-if="user.image.url"><img ng-src="{{ generateLink(user.image.url)}}" width="400" height="300" alt="{{ user.image.url }}"></span>
+    </div> -->
+      <div class="overflow-image  top">
+        <div class="original" id="top">
+          <!-- <img ng-src="{{top1}}"   alt="">
+      <img ng-src="{{top2}}" id="top2"  alt="">
+      <img ng-src="{{top3}}" id="top3"  alt="">
+      <img ng-src="{{top4}}" id="top4" class="top" alt=""> -->
+          <img ng-src="{{url}}" alt="" ng-repeat="(key, url) in topUrls">
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="overflow-image  middle">
+        <div class="original" id="middle">
+          <!-- <img ng-src="{{ generateLink(urlSecond)}}" class="middle" alt=""> -->
+          <img ng-src="{{url}}" alt="" ng-repeat="(key, url) in middleUrls">
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="overflow-image  bottom">
+        <div class="original" id="bottom">
+          <img ng-src="{{url}}" alt="{{$index}}" ng-repeat="(key, url) in bottomUrls">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <!-- <div id="tv-start" ng-show="tv.start" class="tv-states"></div> -->
+  <div id="tv-take-photo" ng-show="tv.takephoto" class="tv-states"></div>
+  <div id="tv-win" ng-show="win" class="tv-states"></div>
+  <div id="tv-lose" ng-show="lose" class="tv-states"></div>
+</div>

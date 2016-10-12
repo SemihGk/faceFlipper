@@ -1,0 +1,30 @@
+<div id="main" class="ipad-add-photo">
+  <div class="content" ng-controller="ipadController as ipad">
+
+    <div class="dev-only">
+    <!-- <p>Me got forms too:</p> -->
+    <button ui-sref='spin'>spin</button>
+    <button ui-sref='goodluck'>goodluck</button>
+    <button ui-sref='lose'>loose</button>
+    <button ui-sref='win'>win</button>
+    </div>
+      <!-- <p>
+      <input type="file" capture="camera" ngf-select ng-model="ipad.media" name="media" ngf-max-size="20MB" ngf-accept="'image/*'" ng-change="ipad.onFileChange()" class="button" value="Sign in" />
+    </p> -->
+		<div class="uploader-content">
+      <dialog class="large-preview">
+        <button title="close" ng-click="closePreview()">X</button>
+        <image ng-src="{{largePreviewUri}}" />
+      </dialog>
+
+      <div fine-uploader upload-server="/upload?_id={{ipad.user._id}}" max-file-size="10000000" large-preview-size="500" allowed-mimes="image/jpeg, image/png, image/gif, image/tiff, image/bmp" allowed-extensions='{{["jpeg", "jpg", "png", "gif", "tiff", "tif", "bmp"]}}'></div>
+      <!-- <form name="form" ng-submit="ipad.play()">
+        <p ng-show="!userplayed">
+          <input type="submit" class="button" value="Play" />
+        </p>
+      </form> -->
+    	</div>
+
+    <!-- <webcam></webcam> -->
+  </div>
+</div>

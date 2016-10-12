@@ -1,0 +1,75 @@
+<div id="main" ng-controller="registerController as register" class="ipad-sign-up">
+  <div class="content" ng-controller="registerController as register">
+  <div class="sign-up-header">
+  <div class="dev-only">
+    <button ui-sref='addphoto'>addphoto</button>
+    </div>
+  </div>
+
+  <div class="sign-up-form">
+
+    <form ng-submit="register.register();">
+    <h2 class="title2">GIVE US A LITTLE INFO TO GET STARTED.</h2>
+
+        <div class="form_row">
+
+          <input id="field1" ng-model="register.user.firstname" type="text" />
+          <span class="form_label"><label for="field1">FIRST NAME </label></span>
+        </div>
+        <div class="form_row">
+
+          <input id="field2" ng-model="register.user.lastname" type="text" />
+          <span class="form_label"><label for="field2">LAST NAME</label></span>
+        </div>
+        <div class="form_row">
+          <input id="startdate" ng-model="register.user.date"  name="startdate" min="1950-01-01" max="2015-01-01" type="date">
+          <span class="form_label"><label>DATE OF BIRTH</label></span>
+        </div>
+        <div class="form_row">
+
+          <input id="field6" ng-model="register.user.email" type="email" />
+          <span class="form_label"><label for="field6">EMAIL</label></span>
+        </div>
+        <div class="form_row">
+
+          <input id="field7" ng-model="register.user.postal" type="text" />
+          <span class="form_label"><label for="field7">POSTAL CODE</label></span>
+        </div>
+        <div class="form_row form_row_checkbox">
+          <input type="checkbox" ng-model="register.user.overage" name="overage"><span class="checkbox_label">I represent to Ontario Lottery and Gaming Corporation ("OLG") that I am 19 years of age or older.</span>
+        </div>
+        <div class="form_row form_row_checkbox">
+          <input type="checkbox" ng-model="register.user.permission" name="permission"><span class="checkbox_label">I consent to OLG sending me an email with a link to retrieve my photograph.</span>
+        </div>
+        <div class="form_row form_row_checkbox">
+          <input type="checkbox" ng-model="register.user.notselfexcluded" name="notselfexcluded"><span class="checkbox_label">I consent to OLG that I am not Self Excluded with OLG Slots and Casinos.</span>
+        </div>
+        <div class="form_row form_row_checkbox">
+          <input type="checkbox" ng-model="register.user.termsandconditions" name="termsandconditions"><span class="checkbox_label">I agree to be legally bound by the Terms and Conditions.</span>
+        </div>
+        <div class="form_row form_row_checkbox last_checkbox">
+          <input type="checkbox" ng-model="register.user.subscription" name="subscription"><span class="checkbox_label">I consent to receive future communications from OLG Slots & Casinos</span>
+        </div>
+
+      <div class="form_row_button">
+        <input type="submit" class="button" value="SIGN ME UP" />
+      </div>
+
+    <div id="notice-of-collection">
+    <a ng-click="register.popup()" href="#notice-template" id="notice-link">NOTICE OF COLLECTION</a>
+    </div>
+	</form>
+	</div>
+
+    <div class="sign-up-footer">
+
+  </div>
+  <div style="display: none;">
+     <div id="notice-template" style="width:1200px;height:500px;overflow:auto;">
+       Personal information is collected by OLG pursuant to the Ontario Lottery and Gaming Corporation Act, 1999 and is intended to be used to conduct and administer the Brand Activation by OLG or through an Event Manager and/or Event Administrator, including providing you with the photograph you have opted in to receive. By participating in the Brand Activation, you further consent to OLG or the Event Manager and/or Event Administrator destroying your photograph on or about 2 months after the email with a link to your photograph has been sent to you. For more information please contact OLG’s Customer Support Centre at 1-800-387-0098.
+     </div>
+ </div>
+
+  </div>
+</div>
+<!--content-->
